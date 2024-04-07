@@ -1,0 +1,25 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <RootNamespace>Conways_game_of_life</RootNamespace>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="pulsar.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="pulsar.txt">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>pulsar.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Update="pulsar.Designer.cs">
+      <DependentUpon>pulsar.txt</DependentUpon>
+    </Compile>
+  </ItemGroup>
+</Project>
