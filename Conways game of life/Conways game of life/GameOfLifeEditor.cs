@@ -37,7 +37,7 @@ namespace Conway_s_Game_of_Life
                     if (cursorPositionX - 2 > 0)
                     {
                         Console.SetCursorPosition(cursorPositionX -= 2, cursorPositionY);
-                        //cellPositionY--;
+                        
                     }
                     break;
 
@@ -45,14 +45,14 @@ namespace Conway_s_Game_of_Life
                     if (cursorPositionX + 2 < CurrentCellGeneration.GetLength(1) - 1)
                     {
                         Console.SetCursorPosition(cursorPositionX += 2, cursorPositionY);
-                        //cellPositionY++;
+                     
                     }
                     break;
                 case ConsoleKey.UpArrow:
                     if (cursorPositionY - 1 > 0)
                     {
                         Console.SetCursorPosition(cursorPositionX, cursorPositionY -= 1);
-                        //cellPositionY--;
+                        
                     }
                     break;
 
@@ -60,7 +60,7 @@ namespace Conway_s_Game_of_Life
                     if (cursorPositionX + 2 < CurrentCellGeneration.GetLength(1) - 1)
                     {
                         Console.SetCursorPosition(cursorPositionX, cursorPositionY += 1);
-                        //cellPositionY++;
+                       
                     }
                     break;
 
