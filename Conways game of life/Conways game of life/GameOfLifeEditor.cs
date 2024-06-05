@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conwat_s_Game_of_Life
+namespace Conway_s_Game_of_Life
 {
     public class GameOfLifeEditor : GameOfLifeBase
     {
@@ -27,7 +27,6 @@ namespace Conwat_s_Game_of_Life
             stringBuilder.AppendLine("[Spacebar] Toggle cell     [Escape] Start menu");
             stringBuilder.AppendLine("[Backspace] Start/stop the life");
         }
-
         public string PlayerMove(ConsoleKeyInfo key, int sizeOfBoard, int windoWidth)
         {
             string generationToReturn = "";
@@ -49,7 +48,6 @@ namespace Conwat_s_Game_of_Life
                         //cellPositionY++;
                     }
                     break;
-
                 case ConsoleKey.UpArrow:
                     if (cursorPositionY - 1 > 0)
                     {
@@ -75,7 +73,6 @@ namespace Conwat_s_Game_of_Life
                     ClearBoard();
                     generationToReturn = Draw(sizeOfBoard, windoWidth);
                     break;
-
                 default:
                     generationToReturn = Draw(sizeOfBoard, windoWidth);
                     break;
@@ -101,7 +98,6 @@ namespace Conwat_s_Game_of_Life
 
             Console.SetCursorPosition(cursorPositionX, cursorPositionY);
         }
-
         private void ClearBoard()
         {
             for (int row = 0; row < CurrentCellGeneration.GetLength(0); row++)

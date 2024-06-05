@@ -5,7 +5,7 @@ using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Conwat_s_Game_of_Life
+namespace Conway_s_Game_of_Life
 {
     public class GameOfLifeBuiltIn : GameOfLifeBase
     {
@@ -57,7 +57,6 @@ namespace Conwat_s_Game_of_Life
 
             return filed;
         }
-
         public void GenerateFiled(string fileName)
         {
             int[,] field = GetFieldAsTextFile(fileName);
