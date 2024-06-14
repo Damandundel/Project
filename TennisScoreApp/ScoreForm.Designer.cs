@@ -1,4 +1,4 @@
-﻿namespace TennisScoreApp
+﻿namespace ProjectTennisScoreApp
 {
     partial class MainTennisForm
     {

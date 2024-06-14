@@ -10,7 +10,7 @@ using System.Windows.Forms;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 using TextBox = System.Windows.Forms.TextBox;
 
-namespace TennisScoreApp
+namespace ProjectTennisScoreApp
 {
     public partial class NewGameForm : Form
     {

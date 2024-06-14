@@ -1,7 +1,7 @@
 using System.Windows.Forms;
 using static System.Windows.Forms.ListViewItem;
 
-namespace TennisScoreApp
+namespace ProjectTennisScoreApp
 {
     public partial class MainTennisForm : Form
     {

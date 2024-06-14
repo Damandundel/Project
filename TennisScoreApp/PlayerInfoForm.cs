@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using static System.Formats.Asn1.AsnWriter;
 
-namespace TennisScoreApp
+namespace ProjectTennisScoreApp
 {
     public partial class PlayerInfoForm : Form
     {
@@ -37,10 +37,10 @@ namespace TennisScoreApp
                 {
                     string secondPlayerName = item.Item1;
                     int secondPlayerPoints = item.Item2;
-                    (this.currentPlayer, this.competitor) = 
-                    GetCurrentPlayerAndCompetitor((firstPlayerName, firstPlayerPoints), (secondPlayerName, secondPlayerPoints)); 
+                    (this.currentPlayer, this.competitor) =
+                    GetCurrentPlayerAndCompetitor((firstPlayerName, firstPlayerPoints), (secondPlayerName, secondPlayerPoints));
                     UpdateListView();
-                }  
+                }
             }
         }
         private void ClearListViews()
@@ -54,7 +54,7 @@ namespace TennisScoreApp
             ((string, int) firstPlayer, (string, int) secondPlayer)
         {
             if (firstPlayer.Item1 == playerName)
-            { 
+            {
                 return (firstPlayer, secondPlayer);
             }
             return (secondPlayer, firstPlayer);
@@ -70,11 +70,11 @@ namespace TennisScoreApp
         }
         private ListView GetCurrentListView(int currentPlayerPoints, int competitorPoints)
         {
-            if(currentPlayerPoints > competitorPoints)
+            if (currentPlayerPoints > competitorPoints)
             {
                 return this.listViewVictories;
             }
-            else if(currentPlayerPoints < competitorPoints)
+            else if (currentPlayerPoints < competitorPoints)
             {
                 return this.listViewLosses;
             }
@@ -96,6 +96,11 @@ namespace TennisScoreApp
         public PlayerInfoForm()
         {
             InitializeComponent();
+        }
+
+        private void labelDraw_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
